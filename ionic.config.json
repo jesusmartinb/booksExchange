@@ -1,0 +1,7 @@
+{
+  "name": "booksExchange",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
