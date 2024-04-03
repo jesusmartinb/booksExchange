@@ -1,13 +1,17 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { useUser } from '../hooks';
 import './Tab4.css';
 
 const Tab4: React.FC = () => {
+
+  const user = useUser();
+  console.log(user);
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Perfil</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -16,7 +20,7 @@ const Tab4: React.FC = () => {
             <IonTitle size="large">Tab 4</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+
       </IonContent>
     </IonPage>
   );
