@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { Avatar } from '../components/Profile';
+import { Avatar, MyBooksInfo } from '../components/Profile';
 
 import './Tab4.css';
 
@@ -16,6 +16,7 @@ const Tab4: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <Avatar />
+        <MyBooksInfo />
       </IonContent>
     </IonPage>
   );
