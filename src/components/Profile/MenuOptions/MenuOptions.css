@@ -1,0 +1,7 @@
+.menu-options-container {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px 10px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
