@@ -6,7 +6,6 @@ import './Tab4.css';
 const Tab4: React.FC = () => {
 
 
-
   return (
     <IonPage>
       <IonHeader>
@@ -16,8 +15,8 @@ const Tab4: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <Avatar />
-        <MyBooksInfo />
         <MenuOptions />
+        <MyBooksInfo />
       </IonContent>
     </IonPage>
   );
