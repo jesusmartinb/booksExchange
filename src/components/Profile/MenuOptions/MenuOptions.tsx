@@ -1,12 +1,24 @@
 import { imageOutline, personCircleOutline } from 'ionicons/icons';
+import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
+import { useUser } from '../../../hooks';
 import { Option } from './Option';
 import './MenuOptions.css';
 
 
 export function MenuOptions() {
 
-    const openCamera = () => {
-        console.log('open camera');
+    const { onChangeAvatar } = useUser();
+
+    const openCamera = async () => {
+        const response = await Camera.getPhoto({
+            quality: 100,
+            resultType: CameraResultType.Uri,
+            allowEditing: true,
+        });
+
+        if (response.webPath) {
+            onChangeAvatar(response.webPath);
+        }
     }
 
     const openChangeName = () => {
